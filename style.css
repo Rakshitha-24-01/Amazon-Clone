@@ -1,0 +1,299 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f1f2f4;
+}
+
+body > *:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #131921;
+  color: white;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: orange;
+}
+
+.search-bar {
+  display: flex;
+  width: 40%;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+}
+
+.search-bar select,
+.search-bar button {
+  padding: 8px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+}
+
+/* MENU */
+.menu {
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* SLIDER */
+.slider {
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  transition: transform 1s ease;
+}
+
+.slider-track img {
+  width: 100vw;
+  height: 400px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* PRODUCTS */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.product-box {
+  background-color: white;
+  padding: 15px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.product-box h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.product-grid.single {
+  grid-template-columns: 1fr;
+}
+
+.product-grid img {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* SCROLL SECTION */
+.scroll-section {
+  background: #fff;
+  padding: 30px 0;
+  margin: 0;
+  width: 100%;
+}
+
+.scroll-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 20px;
+}
+
+.scroll-header h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.scroll-header a {
+  font-size: 14px;
+  color: #007185;
+  text-decoration: none;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 20px;
+  scroll-behavior: smooth;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container img {
+  flex: 0 0 auto;
+  width: 180px;
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.scroll-container img:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+  background-color: #232f3e;
+  color: white;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  padding-top: 0;
+}
+
+.back-to-top {
+  background-color: #37475a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+  border-top: 1px solid #3a4553;
+  width: 100%;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom:10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #3a4553;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.footer-bottom img {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.lang-country select {
+  margin: 0 10px;
+  padding: 5px;
+  background: #37475a;
+  color: white;
+  border: 1px solid #999;
+  font-size: 14px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  width: 300px;
+  height: 400px;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.main-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mrp {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 10px;
+}
+
